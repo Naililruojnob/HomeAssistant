@@ -113,7 +113,8 @@ Exemple de sortie :
 Dans votre fichier `docker-compose.yml` :
     
 ```bash
-    devices:   - /dev/serial/by-id/usb-PhlipsHue_ConBee_II_123456-if00:/dev/ttyUSB0
+    devices:
+       - /dev/serial/by-id/usb-PhlipsHue_ConBee_II_123456-if00:/dev/ttyUSB0
 ```
 
 
