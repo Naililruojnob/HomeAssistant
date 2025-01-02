@@ -1,0 +1,13 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - /PATH_TO_YOUR_CONFIG:/config # Modifier le chemin
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0 # Ajouter votre dongle Zigbee ici
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
