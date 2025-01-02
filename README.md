@@ -93,7 +93,7 @@ services:
     dmesg | grep tty
 ```
     
-    La sortie mentionnera un nouveau périphérique attaché, par exemple :
+La sortie mentionnera un nouveau périphérique attaché, par exemple :
     
 ```bash
     usb 1-1: FTDI USB Serial Device converter now attached to ttyUSB0
@@ -104,13 +104,13 @@ services:
 ```bash
     ls -l /dev/serial/by-id/
 ```
-    Exemple de sortie :
+Exemple de sortie :
     
 ```bash
     usb-PhlipsHue_ConBee_II_123456-if00 -> ../../ttyUSB0
 ```
     
-    Dans votre fichier `docker-compose.yml` :
+Dans votre fichier `docker-compose.yml` :
     
 ```bash
     devices:   - /dev/serial/by-id/usb-PhlipsHue_ConBee_II_123456-if00:/dev/ttyUSB0
