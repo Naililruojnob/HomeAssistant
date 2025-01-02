@@ -85,7 +85,7 @@ services:
     ls /dev/tty*
 ```
     
-    Un nouveau périphérique apparaît, typiquement `/dev/ttyUSB0` ou `/dev/ttyACM0`.
+Un nouveau périphérique apparaît, typiquement `/dev/ttyUSB0` ou `/dev/ttyACM0`.
     
 3. **Confirmer avec `dmesg` :**
     
