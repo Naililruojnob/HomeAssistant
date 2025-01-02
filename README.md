@@ -4,7 +4,7 @@
 https://www.home-assistant.io/installation/alternative
 ### Installation docker & docker compose
 
-### **Installation de Docker et Docker Compose 
+### **Installation de Docker et Docker Compose**
 
 1. **Mettre à jour le système :**
 
